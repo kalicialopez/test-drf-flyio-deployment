@@ -31,7 +31,6 @@ DEBUG = os.environ.get(
     'DJANGO_DEBUG', 
     'False'
 ) != 'False' 
-
 # DEBUG = True #change to True while developing
 
 
@@ -76,7 +75,9 @@ ROOT_URLCONF = 'crowdfunding.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            "templates",
+            ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
