@@ -30,7 +30,9 @@ SECRET_KEY = os.environ.get(
 DEBUG = os.environ.get(
     'DJANGO_DEBUG', 
     'False'
-) != 'False'
+) != 'False' 
+
+# DEBUG = True #change to True while developing
 
 
 
